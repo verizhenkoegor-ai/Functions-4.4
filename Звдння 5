@@ -1,0 +1,14 @@
+fn main() {
+    // Fill in the blank
+    let b = false;
+
+    let _v = match b {
+        true => 1,
+        false => {
+            println!("Success!");
+            std::process::exit(0);
+        }
+    };
+
+    println!("Exercise Failed if printing out this line!");
+}
