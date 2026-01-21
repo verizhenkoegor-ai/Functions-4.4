@@ -1,0 +1,16 @@
+fn main() {
+    println!("Success!");
+}
+
+fn get_option(tp: u8) -> Option<i32> {
+    match tp {
+        1 => Some(1),
+        _ => never_return_fn(), 
+    }
+}
+
+fn never_return_fn() -> ! {
+    loop {} // Варіант 1
+    // panic!("never returns");    
+    // std::process::exit(0);      
+}
